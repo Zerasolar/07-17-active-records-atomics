@@ -1,0 +1,8 @@
+<h1> Click on the Photo you want to change </h1>
+
+<ul>
+  <% Photo.all.each do |list| %>
+  <li><a href="/change_photo_form/<%= list.id %>">Title: <%=list.title%></a></li>
+  <% end %>
+</ul>
+<a href="/photo_menu">Back</a>

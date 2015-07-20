@@ -1,0 +1,10 @@
+<h1>The list of Photo</h1>
+
+<ul>
+  <% Photo.all.each do |list| %>
+  <p><li><%= "#{list.id} - #{list.title}"%></li>
+  </p>
+  <% end %>
+</ul>
+  
+<a href="/home">Back</a>

@@ -1,0 +1,8 @@
+<h1> Click on the Photographer you want to change </h1>
+
+<ul>
+  <% Photographer.all.each do |list| %>
+  <li><a href="/change_photographer_form/<%= list.id %>">Name: <%=list.name%> %></a></li>
+  <% end %>
+</ul>
+<a href="/photographer_menu">Back</a>

@@ -1,0 +1,20 @@
+<h1> Adding a Photo </h1>
+
+<form action= "/save_photo">
+  
+  Name of the Photo<br>
+  <input type "text" placeholder="" name="title"><br>
+  
+  Location of the Photo<br>
+  <input type "text" placeholder="" name="location"><br>
+  
+  <p> Photographer: <select name="name"></p>
+    <%Photographer.all.each do |photographer| %>
+    <option value="<%= photographer.id %>"> <%= photographer.name %></option>
+    <% end %>
+  </select><br><br>
+  
+  <input type= "submit">
+</form>
+
+<a href="/home">Back</a>

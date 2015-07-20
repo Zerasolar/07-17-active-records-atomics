@@ -1,0 +1,15 @@
+<h1> Edit Photographer </h1>
+
+What you want to edit?
+
+<form action="/edited_photographer/<%=@photographer_instance.id%>">
+  
+   
+  
+  <p> New Name : <input type="text" placeholder="Name" name="name" value="<%=@photographer_instance.name%>"></p>
+  
+  <p> <input type="submit" value="submit changes"></p>
+
+  
+</form>
+<a href="/change_photographer">Back</a>

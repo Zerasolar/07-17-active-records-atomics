@@ -1,0 +1,8 @@
+<h1> Click on the Album you want to change </h1>
+
+<ul>
+  <% Album.all.each do |list| %>
+  <li><a href="/change_album_form/<%= list.id %>">Title: <%=list.title%></a></li>
+  <% end %>
+</ul>
+<a href="/album_menu">Back</a>
